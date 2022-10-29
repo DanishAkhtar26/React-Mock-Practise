@@ -1,3 +1,5 @@
+App.js File Content : 
+
 import React, {useState} from "react";
 import "./styles.css";
 
@@ -67,7 +69,7 @@ export default function App() {
               ) : (
                 ""
               )}
-              <button onClick={() => deleteTodo(todo.id)}>&times;</button>
+              <button onClick={() => deleteTodo(todo.id)}>&times; Remove</button>
             </span>
           </li>
         ))}
@@ -76,48 +78,4 @@ export default function App() {
     </div>
   );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-import logo from './logo.svg';
-import './App.css';
-import Counter from './Counter';
-
-function App() {
-  return (
-    <div className="App">
-      <Counter />
-    </div>
-  );
-}
-
-export default App;
-
-
 
