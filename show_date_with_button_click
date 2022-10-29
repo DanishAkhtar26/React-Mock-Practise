@@ -1,0 +1,29 @@
+import React from "react";
+import "./styles.css";
+
+export default function App() {
+  return <Mydate />;
+}
+
+class Mydate extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      date: new Date(),
+      showMessage: false
+    };
+    this.show = this.show.bind(this);
+  }
+  show() {
+    this.setState({ showMessage: true });
+  }
+  render() {
+    return (
+      <div>
+        <h2>Click on the button to display the date</h2>
+        {this.state.showMessage && <p>{this.state.date.toString()}</p>}
+        <button onClick={this.show}>show Date</button>
+      </div>
+    );
+  }
+}
