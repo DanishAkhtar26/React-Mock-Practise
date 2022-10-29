@@ -11,6 +11,10 @@ export default function App() {
 
  
   const handleSubmit = (e) => {
+    if(input === ""){
+      alert("Please enter something");
+      return;
+    }
     e.preventDefault();
 
     const newTodos = {
