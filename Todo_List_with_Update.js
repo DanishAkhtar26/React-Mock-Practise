@@ -189,3 +189,18 @@ export default class Todo extends React.Component {
   }
 }
 
+
+
+
+
+
+css file :
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.main {
+  background-color: #04160b;
+  color: white;
+}
